@@ -507,7 +507,6 @@
 }
 
 .Herosectionseventh_maincont_content_cont_left,
-.Herosectionseventh_maincont_content_cont_middle,
 .Herosectionseventh_maincont_content_cont_right {
   flex: 1; /* Ensures equal width for all three columns */
   display: flex;
@@ -518,6 +517,7 @@
   border: 1px solid #dc5f00;
   background-color: #262626;
   box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .Herosectionseventh_maincont_content_cont_left {
@@ -562,7 +562,7 @@
 .Herosectionseventh_maincont_content_cont_left_h3 {
   text-align: center;
   line-height: 1;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 18px;
   margin: 20px 0px;
 }
@@ -695,7 +695,7 @@
 
   .Herosectionsixth_maincont {
     height: initial;
-    padding: 20px 10px ;
+    padding: 20px 10px;
   }
   .Herosectionsixth_maincontent_cont {
     height: initial;
@@ -732,15 +732,14 @@
   .Herosectionsixth_maincontent_cont_p {
     line-height: 17px;
   }
-  .HerosectionThird_contentcont_box_imagecont{
+  .HerosectionThird_contentcont_box_imagecont {
     height: 8vh;
   }
-  
 
   /* ----------------------------------------------------------------------------- .Herosectionseventh_maincont   */
   .Herosectionseventh_maincont {
     height: inherit;
-    padding: 20px 10px ;
+    padding: 20px 10px;
   }
   .Herosectionseventh_maincont_h1 {
     font-size: 24px;
@@ -764,6 +763,6 @@
     margin: 10px 0px;
   }
   .Herosectionseventh_maincont_content_cont_left_h2 {
-    font-size: 20px; 
+    font-size: 20px;
   }
 }
