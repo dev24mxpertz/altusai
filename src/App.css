@@ -173,7 +173,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: stretch; /* Ensure boxes stretch to the same height */
-  width: 40%;
+  width: 55%;
   /* background-color: red;  */
 }
 
@@ -281,7 +281,6 @@
   margin-top: 20px;
 }
 
-
 /* -------------------------------------------------------------------------------  HerosectionFifth   */
 .HerosectionFifth_maincont {
   width: 100%;
@@ -344,7 +343,7 @@
   color: #ffffff;
   text-transform: uppercase;
   margin-top: 20px;
-  width:75%;
+  width: 75%;
 }
 
 .HerosectionFifth_contentcont_box_p {
@@ -372,7 +371,6 @@
   color: #ffffff;
   margin: 40px 0px;
 }
-
 
 /* --------------------------------------------------------------------------------------------------------- Herosectionsixth_maincont */
 .Herosectionsixth_maincont {
@@ -411,8 +409,6 @@
 }
 
 .Herosectionsixth_maincontent_cont_uppermain_left,
-
-
 .Herosectionsixth_maincontent_cont_lowermain_right {
   display: flex;
   flex-direction: column;
@@ -426,7 +422,7 @@
   flex-grow: 1; /* All elements grow equally to the tallest sibling */
 }
 .Herosectionsixth_maincontent_cont_uppermain_right,
-.Herosectionsixth_maincontent_cont_lowermain_left{
+.Herosectionsixth_maincontent_cont_lowermain_left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -480,17 +476,17 @@
   text-align: center;
 }
 
-
 /* -----------------------------------------------------------------------------------------   Herosectionseventh_maincont    */
 
 .Herosectionseventh_maincont {
   width: 100%;
-  padding: 20px 80px;
+  padding: 40px 80px;
   background-color: #262626;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
+  box-sizing: border-box;
 }
 
 .Herosectionseventh_maincont_h1 {
@@ -505,63 +501,78 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: stretch; /* Ensures all children stretch to the same height */
+  gap: 10px; /* Adds a 10px gap between the columns */
+  box-sizing: border-box;
+}
+
+.Herosectionseventh_maincont_content_cont_left,
+.Herosectionseventh_maincont_content_cont_middle,
+.Herosectionseventh_maincont_content_cont_right {
+  flex: 1; /* Ensures equal width for all three columns */
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  height: 70vh;
+  justify-content: flex-start;
+  padding: 10px;
+  border: 1px solid #dc5f00;
+  background-color: #262626;
+  box-sizing: border-box;
 }
 
 .Herosectionseventh_maincont_content_cont_left {
-  width: 24%;
-  height: 100%;
-  border: 1px solid #dc5f00;
-  background-color: #262626;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 10px;
-  min-height: 100%;
+  width: 24%; /* Optional if exact width is needed */
 }
+
 .Herosectionseventh_maincont_content_cont_middle {
-  width: 50%;
-  background-color: #262626;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
+  width: 48%; /* Optional if exact width is needed */
 }
 
 .Herosectionseventh_maincont_content_cont_right {
-  width: 24%;
-  height: 100%;
+  width: 24%; /* Optional if exact width is needed */
+}
+
+.Herosectionseventh_maincont_content_cont_middleupper,
+.Herosectionseventh_maincont_content_cont_middlelower {
+  flex: 1; /* Ensures both sections inside the middle column have equal height */
+  width: 100%;
   border: 1px solid #dc5f00;
   background-color: #262626;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 10px;
-  min-height: 100%;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Adds spacing between middle-upper and middle-lower */
 }
 
+.Herosectionseventh_maincont_content_cont_middlelower {
+  margin-bottom: 0; /* No extra margin for the last element */
+}
+
+/* Typography adjustments */
 .Herosectionseventh_maincont_content_cont_left_h2 {
-  font-size: 30px;
-  font-weight: 700;
   text-align: center;
-  line-height: 35px;
+  line-height: 1.5;
   color: #dc5f00;
-  text-transform: uppercase;
+  font-size: 30px;
 }
-
 .Herosectionseventh_maincont_content_cont_left_h3 {
-  font-size: 18px;
-  font-weight: 700;
   text-align: center;
-  line-height: 22px;
-  color: #ffffff;
-  text-transform: uppercase;
+  line-height: 1;
+  color: #FFFFFF;
+  font-size: 18px;
   margin: 20px 0px;
 }
+
+/* .Herosectionseventh_maincont_content_cont_middleupper p,
+.Herosectionseventh_maincont_content_cont_middlelower p {
+  text-align: center;
+  line-height: 1.5;
+  color: #dc5f00;
+} */
 
 .Herosectionseventh_maincont_content_cont_left_p {
   font-size: 16px;
@@ -569,32 +580,7 @@
   text-align: center;
   line-height: 22px;
   color: #ffffff;
-}
-
-.Herosectionseventh_maincont_content_cont_middleupper {
-  width: 100%;
-  border: 1px solid #dc5f00;
-  background-color: #262626;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 40px 10px;
-  height: 48%;
-  border-radius: 10px;
-}
-.Herosectionseventh_maincont_content_cont_middlelower {
-  width: 100%;
-  border: 1px solid #dc5f00;
-  background-color: #262626;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 10px;
-  padding: 40px 10px;
-  height: 48%;
-  border-radius: 10px;
+  margin: 20px 0px;
 }
 
 /* ---------------------------------------------------------------- */
@@ -660,6 +646,7 @@
   .HerosectionThird_contentcont_box {
     width: 100%;
     margin: 20px 0px;
+    padding: 20px;
   }
 
   /* -------------------------------------------------------------------------------------. HerosectionFourth_maincont  */
@@ -708,6 +695,7 @@
 
   .Herosectionsixth_maincont {
     height: initial;
+    padding: 20px 10px ;
   }
   .Herosectionsixth_maincontent_cont {
     height: initial;
@@ -720,10 +708,10 @@
     flex-direction: column;
   }
   .Herosectionsixth_maincontent_cont_uppermain_left {
-    width: 100%;
+    max-width: 100%;
   }
   .Herosectionsixth_maincontent_cont_uppermain_right {
-    width: 100%;
+    max-width: 100%;
     margin: 10px 0px;
   }
   .Herosectionsixth_maincontent_cont_lowermain {
@@ -731,17 +719,28 @@
     flex-direction: column;
   }
   .Herosectionsixth_maincontent_cont_lowermain_left {
-    width: 100%;
+    max-width: 100%;
   }
   .Herosectionsixth_maincontent_cont_lowermain_right {
-    width: 100%;
+    max-width: 100%;
     margin: 10px 0px;
   }
+  .Herosectionsixth_maincontent_cont_h2 {
+    font-size: 21px;
+    line-height: 23px;
+  }
+  .Herosectionsixth_maincontent_cont_p {
+    line-height: 17px;
+  }
+  .HerosectionThird_contentcont_box_imagecont{
+    height: 8vh;
+  }
+  
 
   /* ----------------------------------------------------------------------------- .Herosectionseventh_maincont   */
   .Herosectionseventh_maincont {
     height: inherit;
-
+    padding: 20px 10px ;
   }
   .Herosectionseventh_maincont_h1 {
     font-size: 24px;
@@ -763,5 +762,8 @@
   }
   .Herosectionseventh_maincont_content_cont_middlelower {
     margin: 10px 0px;
+  }
+  .Herosectionseventh_maincont_content_cont_left_h2 {
+    font-size: 20px; 
   }
 }
