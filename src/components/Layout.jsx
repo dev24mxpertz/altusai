@@ -27,27 +27,26 @@ const Layout = () => {
       .to(".Loading_container", {
         height: 0,
         opacity: 0,
-        duration: 0.5,
+        duration: 0.1,
         ease: "power2.out",
       })
       .to(".Layout_section", {
         opacity: 1,
-        height: "initial",
+        height: "auto",
         duration: 0.1,
         ease: "power2.out",
+        stagger: 0.1,
       })
       .to(".Loading_overlaydiv", {
-        width: "0%",
-        opacity: 0,
         left: "100%",
         transform: "translate(-50%, -50%)",
+        opacity: 0,
+        width: "0%",
         ease: "power2.out",
-        duration: 1,
+        duration: 0.3,
       })
-      .to(".Loading_overlaydiv", {
-        display: "none",
-        duration: 0.1,
-      });
+      .set(".Loading_overlaydiv", { display: "none" });
+
 
     const loadingNumberTimeline = gsap.timeline({
       onUpdate: () => {
@@ -60,6 +59,9 @@ const Layout = () => {
     });
 
     loadingNumberTimeline.to({}, { duration: 3 });
+      return () => {
+      loadingWindowAnimation.kill();
+    };
   }, []);
 
   return (
