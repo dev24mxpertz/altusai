@@ -1,9 +1,7 @@
 import React from "react";
-import box1iconimage3 from "../assets/images/box1iconimage3.png";
-import box1iconimage4 from "../assets/images/box1iconimage4.png";
-import box1iconimage5 from "../assets/images/box1iconimage5.png";
-
-
+import box1iconimage3 from "../../assets/images/box1iconimage3.png";
+import box1iconimage4 from "../../assets/images/box1iconimage4.png";
+import box1iconimage5 from "../../assets/images/box1iconimage5.png";
 
 const HerosectionFourth = () => {
   return (

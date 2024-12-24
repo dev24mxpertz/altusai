@@ -1,5 +1,5 @@
 import React from "react";
-import box1iconimage6 from "../assets/images/box1iconimage6.png";
+import box1iconimage6 from "../../assets/images/box1iconimage6.png";
 
 const HerosectionFifth = () => {
   return (

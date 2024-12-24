@@ -706,7 +706,6 @@
   position: relative;
   min-height: 100vh;
   background-color: black;
-  z-index: 1;
 }
 
 .Loading_Number_div {
@@ -717,6 +716,14 @@
   font-size: 72px;
   font-family: "Joyride W05 STD";
 }
+
+
+
+
+
+
+
+
 
 /* ---------------------------------------------------------------- */
 

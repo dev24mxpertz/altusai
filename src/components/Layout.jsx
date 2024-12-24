@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import HerosectionFirst from "./HerosectionFirst";
-import HerosectionSecond from "./HerosectionSecond";
-import HerosectionThird from "./HerosectionThird";
-import HerosectionFourth from "./HerosectionFourth";
-import HerosectionFifth from "./HerosectionFifth";
-import Herosectionsixth from "./Herosectionsixth";
-import Herosectionseventh from "./Herosectionseventh";
+import HerosectionFirst from "./HeroPages/HerosectionFirst";
+import HerosectionSecond from "./HeroPages/HerosectionSecond";
+import HerosectionThird from "./HeroPages/HerosectionThird";
+import HerosectionFourth from "./HeroPages/HerosectionFourth";
+import HerosectionFifth from "./HeroPages/HerosectionFifth";
+import Herosectionsixth from "./HeroPages/Herosectionsixth";
+import Herosectionseventh from "./HeroPages/Herosectionseventh";
 import Logo_image from "../assets/images/Logo_image.png";
 import gsap from "gsap";
 

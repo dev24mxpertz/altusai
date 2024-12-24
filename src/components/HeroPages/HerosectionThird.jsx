@@ -1,6 +1,6 @@
 import React from 'react';
-import box1iconimage from "../assets/images/box1iconimage.png"
-import box2iconimage from "../assets/images/box1iconimage2.png"
+import box1iconimage from "../../assets/images/box1iconimage.png";
+import box2iconimage from "../../assets/images/box1iconimage2.png"
 
 const HerosectionThird = () => {
   return (
