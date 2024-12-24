@@ -28,6 +28,7 @@ const Layout = () => {
         height: 0,
         opacity: 0,
         duration: 0.1,
+        display:"none",
         ease: "power2.out",
       })
       .to(".Layout_section", {
