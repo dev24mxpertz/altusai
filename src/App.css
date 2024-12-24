@@ -13,6 +13,14 @@
 
 /* -------------------------------------------------------------------------------------------------------- HerosectionFirst */
 
+.btn{
+  padding: 20px;
+  position: absolute;
+  top: 10;
+  right: 0;
+  text-decoration: none;
+  color: #dc5f00;
+}
 
 
 .HerosectionFirst_maincont {
