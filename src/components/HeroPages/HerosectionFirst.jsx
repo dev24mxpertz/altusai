@@ -20,7 +20,10 @@ const HerosectionFirst = () => {
           </button>
         </div>
       </div>
-      <Link className="btn" to="/Aboutus">ABOUTUS</Link>
+      <div className="btn">
+        <Link to="/Aboutus">ABOUTUS</Link>
+        <Link to="/Frontend_AI">Frontend_AI</Link>
+      </div>
     </div>
   );
 };
