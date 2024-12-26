@@ -19,7 +19,6 @@ const Layout = () => {
       .to(".Loading_overlaydiv", {
         width: "100%",
         left: "50%",
-        transform: "translate(-50%, -50%)",
         opacity: 1,
         ease: "power2.in",
         duration: 0.1,
@@ -28,23 +27,22 @@ const Layout = () => {
         height: 0,
         opacity: 0,
         duration: 0.4,
-        display:"none",
+        display: "none",
         ease: "power2.out",
-      } )
+      })
       .to(".Layout_section", {
         opacity: 1,
         height: "auto",
         duration: 0.4,
         ease: "power2.out",
-      } )
+      })
       .to(".Loading_overlaydiv", {
         left: "150%",
         transform: "translate(-50%, -50%)",
         ease: "power2.out",
         duration: 1,
       })
-      // .set(".Loading_overlaydiv", { display: "none" });
-
+    .set(".Loading_overlaydiv", { display: "none" });
 
     const loadingNumberTimeline = gsap.timeline({
       onUpdate: () => {
@@ -57,7 +55,7 @@ const Layout = () => {
     });
 
     loadingNumberTimeline.to({}, { duration: 3 });
-      return () => {
+    return () => {
       loadingWindowAnimation.kill();
     };
   }, []);
@@ -91,7 +89,7 @@ const Layout = () => {
           <Herosectionseventh />
         </div>
       </div>
-        <div className="Loading_overlaydiv"></div>
+      <div className="Loading_overlaydiv"></div>
     </>
   );
 };
