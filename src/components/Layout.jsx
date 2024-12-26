@@ -43,7 +43,7 @@ const Layout = () => {
         ease: "power2.out",
         duration: 1,
       })
-      .set(".Loading_overlaydiv", { display: "none" });
+      // .set(".Loading_overlaydiv", { display: "none" });
 
 
     const loadingNumberTimeline = gsap.timeline({
@@ -63,34 +63,36 @@ const Layout = () => {
   }, []);
 
   return (
-    <div className="Main_Layout_Container">
-      <div className="Loading_container">
-        <img src={Logo_image} className="image_container" alt="Logo" />
-        <div className="Loading_Number_div">{loadingNumber}</div>
+    <>
+      <div className="Main_Layout_Container">
+        <div className="Loading_container">
+          <img src={Logo_image} className="image_container" alt="Logo" />
+          <div className="Loading_Number_div">{loadingNumber}</div>
+        </div>
+        <div className="Layout_section">
+          <HerosectionFirst />
+        </div>
+        <div className="Layout_section">
+          <HerosectionSecond />
+        </div>
+        <div className="Layout_section">
+          <HerosectionThird />
+        </div>
+        <div className="Layout_section">
+          <HerosectionFourth />
+        </div>
+        <div className="Layout_section">
+          <HerosectionFifth />
+        </div>
+        <div className="Layout_section">
+          <Herosectionsixth />
+        </div>
+        <div className="Layout_section">
+          <Herosectionseventh />
+        </div>
       </div>
-      <div className="Layout_section">
-        <HerosectionFirst />
-      </div>
-      <div className="Layout_section">
-        <HerosectionSecond />
-      </div>
-      <div className="Layout_section">
-        <HerosectionThird />
-      </div>
-      <div className="Layout_section">
-        <HerosectionFourth />
-      </div>
-      <div className="Layout_section">
-        <HerosectionFifth />
-      </div>
-      <div className="Layout_section">
-        <Herosectionsixth />
-      </div>
-      <div className="Layout_section">
-        <Herosectionseventh />
-      </div>
-      <div className="Loading_overlaydiv"></div>
-    </div>
+        <div className="Loading_overlaydiv"></div>
+    </>
   );
 };
 
