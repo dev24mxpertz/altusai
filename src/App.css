@@ -6,14 +6,14 @@
 .Layout_section {
   width: 100%;
   background-color: black;
- opacity: 0;
- z-index: 1;
- height: 0px;
+  opacity: 0;
+  z-index: 1;
+  height: 0px;
 }
 
 /* -------------------------------------------------------------------------------------------------------- HerosectionFirst */
 
-.btn{
+.btn {
   padding: 20px;
   position: absolute;
   top: 10;
@@ -21,7 +21,6 @@
   text-decoration: none;
   color: #dc5f00;
 }
-
 
 .HerosectionFirst_maincont {
   width: 100%;
@@ -539,22 +538,24 @@
   line-height: 15px;
   margin: 10px 0;
   text-align: center;
-    opacity: 0;
+  opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-
-.Herosectionsixth_maincontent_cont_uppermain_left:hover .Herosectionsixth_maincontent_cont_psmall,
-.Herosectionsixth_maincontent_cont_uppermain_right:hover .Herosectionsixth_maincontent_cont_psmall,
-.Herosectionsixth_maincontent_cont_middlemain:hover .Herosectionsixth_maincontent_cont_psmall,
-.Herosectionsixth_maincontent_cont_lowermain_left:hover .Herosectionsixth_maincontent_cont_psmall,
-.Herosectionsixth_maincontent_cont_lowermain_right:hover .Herosectionsixth_maincontent_cont_psmall {
+.Herosectionsixth_maincontent_cont_uppermain_left:hover
+  .Herosectionsixth_maincontent_cont_psmall,
+.Herosectionsixth_maincontent_cont_uppermain_right:hover
+  .Herosectionsixth_maincontent_cont_psmall,
+.Herosectionsixth_maincontent_cont_middlemain:hover
+  .Herosectionsixth_maincontent_cont_psmall,
+.Herosectionsixth_maincontent_cont_lowermain_left:hover
+  .Herosectionsixth_maincontent_cont_psmall,
+.Herosectionsixth_maincontent_cont_lowermain_right:hover
+  .Herosectionsixth_maincontent_cont_psmall {
   opacity: 1;
   transform: translateY(0);
 }
-
-
 
 /* -----------------------------------------------------------------------------------------   Herosectionseventh_maincont    */
 
@@ -598,7 +599,7 @@
   background-color: #262626;
   box-sizing: border-box;
   border-radius: 10px;
-   transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.6s ease;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.6s ease;
 }
 
 .Herosectionseventh_maincont_content_cont_left {
@@ -627,7 +628,7 @@
   border-radius: 10px;
   box-sizing: border-box;
   margin-bottom: 10px; /* Adds spacing between middle-upper and middle-lower */
-   transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.6s ease;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.6s ease;
 }
 
 .Herosectionseventh_maincont_content_cont_middlelower {
@@ -676,19 +677,23 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.Herosectionseventh_maincont_content_cont_left:hover .Herosectionseventh_maincont_content_cont_left_p,
-.Herosectionseventh_maincont_content_cont_middleupper:hover .Herosectionseventh_maincont_content_cont_left_p,
-.Herosectionseventh_maincont_content_cont_middlelower:hover .Herosectionseventh_maincont_content_cont_left_p,
-.Herosectionseventh_maincont_content_cont_right:hover .Herosectionseventh_maincont_content_cont_left_p {
+.Herosectionseventh_maincont_content_cont_left:hover
+  .Herosectionseventh_maincont_content_cont_left_p,
+.Herosectionseventh_maincont_content_cont_middleupper:hover
+  .Herosectionseventh_maincont_content_cont_left_p,
+.Herosectionseventh_maincont_content_cont_middlelower:hover
+  .Herosectionseventh_maincont_content_cont_left_p,
+.Herosectionseventh_maincont_content_cont_right:hover
+  .Herosectionseventh_maincont_content_cont_left_p {
   opacity: 1;
   transform: translateY(0);
-} 
+}
 
 /* -------------------------------------------------------------------------------- */
 
 .Loading_container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -712,10 +717,14 @@
   z-index: 6;
 }
 
-.Main_Layout_Container{
-  position: relative;
+.Main_Layout_Container {
+  position: relativee;
   min-height: 100vh;
   background-color: black;
+  width: 100%;
+}
+body::-webkit-scrollbar{
+  display: none;
 }
 
 .Loading_Number_div {
@@ -727,13 +736,136 @@
   font-family: "Joyride W05 STD";
 }
 
+/* -------------------------------------------------------------------------Footer_maincontainer */
 
+.Footer_maincontainer {
+  width: 100%;
+  padding: 20px;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.Footer_content_container1 {
+  padding: 20px;
+  max-width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.Footer_content_container1_image {
+  width: 80%;
+  height: 20vh;
+}
 
+.Footer_content_heading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  width: 100%;
+  color: #dc5f00;
+  text-align: center;
+  text-transform: uppercase;
+}
+.Footer_content_heading_p {
+  font-size: 14px;
+  font-weight: 6 00;
+  line-height: 15px;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0px;
+}
 
+.Footer_content_container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* background-color: red; */
+}
 
+.footer_link_div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 10px;
+  width: 70%;
+  /* background-color: blue; */
+}
 
+.footer_link_div2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 10px;
+  width: 100%;
+  /* background-color: blue; */
+}
+
+.footer_link_div2 > span {
+  color: #ffffff;
+  margin-right: 10px;
+  padding: 4px;
+  background-color: #262626;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dc5f00;
+}
+
+.footer_link_div_link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.Footer_content_heading2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #dc5f00;
+  text-align: left;
+  margin: 20px 0px;
+  text-transform: uppercase;
+}
+
+.footer_link_div > span {
+  color: #ffffff;
+  margin-right: 7px;
+  margin-bottom: 7px;
+}
+
+.Footer_content_container3 {
+  padding: 20px;
+  max-width: fit-content;
+  /* background-color: red; */
+}
+
+.footer_icondiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  margin: 30px 0px;
+}
+
+.footer_icondiv_link {
+  color: #dc5f00;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.footer_icondiv_link:nth-child(1) {
+  color: #dc5f00;
+  font-size: 30px;
+  margin-left: 0px;
+}
 
 /* ---------------------------------------------------------------- */
 

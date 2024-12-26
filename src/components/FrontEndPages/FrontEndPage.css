@@ -17,7 +17,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   text-align: start;
-  width: 60%;
+  width: 80%;
 }
 
 .FrontendsectionFirst_contentcont_h1 {
@@ -146,10 +146,8 @@
 }
 
 /* --------------------------------------------------------------------------------------------- */
-
 .FrontendsectionThird_maincont {
   width: 100%;
-  /* min-height: 100vh; */
   background: linear-gradient(131.19deg, #1c1c1c 1.42%, #292929 100.93%);
   position: relative;
   display: flex;
@@ -160,7 +158,6 @@
 }
 
 .FrontendsectionThird_contentcont {
-  /* background-color: pink; */
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -195,7 +192,48 @@
 .FrontendsectionThird_tablecont {
   width: 100%;
   padding: 20px;
-  background-color: blue;
+  background-color: transparent;
+}
+
+.FrontendsectionThird_table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.FrontendsectionThird_table th,
+.FrontendsectionThird_table td {
+  border: 1px solid #dc5f00;
+  padding: 10px;
+}
+.FrontendsectionThird_table th:nth-child(1) {
+  color: #dc5f00;
+  text-align: left;
+}
+
+.FrontendsectionThird_table th {
+  color: #dc5f00;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.FrontendsectionThird_table td {
+  text-align: start;
+  padding: 10px 20px;
+}
+
+.FrontendsectionThird_table td:nth-child(2),
+.FrontendsectionThird_table td:nth-child(3) {
+  text-align: center;
+}
+
+.FrontendsectionThird_table th:nth-child(1) {
+  width: 60%;
+}
+
+.FrontendsectionThird_table th:nth-child(2),
+.FrontendsectionThird_table th:nth-child(3) {
+  width: 20%;
 }
 
 /* ------------------------------------------------------- */
@@ -420,7 +458,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   text-align: start;
-  width: 80%;
+  width: 100%;
 }
 
 .Frontendsectioneight_contentcont_h1 {
@@ -429,4 +467,224 @@
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
+}
+
+/* -----------------------------------------------------------------------------------  Frontendsectioneight_contentcont_form  ----  */
+
+.Frontendsectioneight_contentcont_form {
+  /* background-color: red; */
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.Frontendsectioneight_contentcont_form_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.Frontendsectioneight_contentcont_form_input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  padding: 20px 0px;
+  width: 45%;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Joyride W05 STD;
+  color: #ffffff;
+}
+
+.Frontendsectioneight_contentcont_form_input::placeholder {
+  color: white;
+  opacity: 1; /* Ensure the placeholder is fully opaque */
+}
+
+.Frontendsectioneight_contentcont_form_input2 {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  padding: 20px 0px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Joyride W05 STD;
+  color: #ffffff;
+}
+
+.Frontendsectioneight_contentcont_form_input2::placeholder {
+  color: white;
+  opacity: 1; /* Ensure the placeholder is fully opaque */
+}
+
+@media (min-width: 0px) and (max-width: 450px) {
+  .FrontendsectionFirst_maincont {
+    padding: 10px;
+  }
+  .FrontendsectionFirst_contentcont {
+    width: 100%;
+  }
+  .FrontendsectionFirst_contentcont_h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .FrontendsectionFirst_contentcont_h2 {
+    font-size: 36px;
+    line-height: 37px;
+    margin: 10px 0px;
+  }
+  .FrontendsectionFirst_contentcont_buttoncont_button {
+    max-width: calc(92.33% - 10px);
+    flex-basis: calc(56.33% - 10px);
+  }
+
+  /* -------------------------------------------------------------------------------- */
+
+  .FrontendsectionSecond_maincont {
+    padding: 10px;
+  }
+  .FrontendsectionSecond_contentcont {
+    width: 100%;
+  }
+
+  .FrontendsectionSecond_contentcont_h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .FrontendsectionSecond_contentcont_h2 {
+    font-size: 32px;
+    line-height: 37px;
+    margin: 10px 0px;
+  }
+
+  /* -----------------------------------------------------   .FrontendsectionThird_maincont */
+
+  .FrontendsectionThird_maincont {
+    padding: 10px;
+  }
+  .FrontendsectionThird_contentcont_h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .FrontendsectionThird_contentcont {
+    width: 100%;
+  }
+  .FrontendsectionThird_contentcont_h2 {
+    font-size: 32px;
+    line-height: 37px;
+    margin: 10px 0px;
+  }
+  .FrontendsectionThird_tablecont{
+    padding: 0px;
+  }
+
+  .FrontendsectionThird_table th{
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .FrontendsectionThird_table td{
+    font-size: 8px;
+  }
+
+/* *--------------------------------------------------------  FrontendsectionFourth_maincont  ----  */
+
+.FrontendsectionFourth_maincont{
+  padding: 10px;
+}
+.FrontendsectionFourth_contentcont{
+  width: 100%;
+}
+.FrontendsectionFourth_contentcont_h1{
+      font-size: 32px;
+    line-height: 34px;
+}
+  .FrontendsectionFourth_contentcont_h2 {
+    font-size: 32px;
+    line-height: 37px;
+    margin: 10px 0px;
+  }
+
+
+  /* -----------------------------------------------.FrontendsectionFifth_maincont */
+
+.FrontendsectionFifth_maincont{
+  padding: 10px;
+}
+.FrontendsectionFifth_contentcont{
+  width: 100%;
+}
+.FrontendsectionFifth_contentcont_h1{
+        font-size: 40px;
+    line-height: 40px;
+}
+.FrontendsectionFifth_contentcont_h2{
+      font-size: 32px;
+    line-height: 37px;
+    margin: 10px 0px;
+}
+
+/* ------------------------------------------------Frontendsectionsixth_maincont */
+
+.Frontendsectionsixth_maincont{
+  padding: 10px;
+}
+
+.Frontendsectionsixth_contentcont{
+  width: 100%;
+}
+
+.Frontendsectionsixth_contentcont_h1{
+        font-size: 40px;
+    line-height: 40px;
+}
+
+/* ---------------------------------------------------Frontendsectionseventh_maincont */
+
+.Frontendsectionseventh_maincont{
+  padding: 10px;
+}
+.Frontendsectionseventh_contentcont{
+  width: 100%;
+}
+.Frontendsectionseventh_contentcont_h1{
+          font-size: 40px;
+    line-height: 40px;
+}
+
+/* ---------------------------------------------------------Frontendsectioneight_maincont */
+
+.Frontendsectioneight_maincont{
+  padding: 10px;
+}
+.Frontendsectioneight_contentcont_h1{
+            font-size: 40px;
+    line-height: 40px;
+}
+
+.Frontendsectioneight_contentcont_form_div{
+  flex-direction: column;
+}
+
+.Frontendsectioneight_contentcont_form_input {
+  width: 100%;
+  font-size: 12px;
+}
+
+.Frontendsectioneight_contentcont_form_input2{
+  font-size: 12px;
+}
+
+
+
 }

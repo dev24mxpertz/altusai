@@ -9,6 +9,7 @@ import FrontendsectionFifth from "./FrontEndPages/FrontendsectionFifth";
 import Frontendsectionsixth from "./FrontEndPages/Frontendsectionsixth";
 import Frontendsectionseventh from "./FrontEndPages/Frontendsectionseventh";
 import Frontendsectioneight from "./FrontEndPages/Frontendsectioneight";
+import Footer from "./Footer";
 
 const FrontEndPageLayout = () => {
   useEffect(() => {
@@ -41,6 +42,7 @@ const FrontEndPageLayout = () => {
       <div className="Layout_section">
         <Frontendsectioneight />
       </div>
+      <Footer/>
     </div>
   );
 };

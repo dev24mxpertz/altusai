@@ -22,29 +22,26 @@ const Layout = () => {
         transform: "translate(-50%, -50%)",
         opacity: 1,
         ease: "power2.in",
-        duration: 0.5,
+        duration: 0.1,
       })
       .to(".Loading_container", {
         height: 0,
         opacity: 0,
-        duration: 0.1,
+        duration: 0.4,
         display:"none",
         ease: "power2.out",
-      })
+      } )
       .to(".Layout_section", {
         opacity: 1,
         height: "auto",
-        duration: 0.1,
+        duration: 0.4,
         ease: "power2.out",
-        stagger: 0.1,
-      })
+      } )
       .to(".Loading_overlaydiv", {
-        left: "100%",
+        left: "150%",
         transform: "translate(-50%, -50%)",
-        opacity: 0,
-        width: "0%",
         ease: "power2.out",
-        duration: 0.3,
+        duration: 1,
       })
       .set(".Loading_overlaydiv", { display: "none" });
 
