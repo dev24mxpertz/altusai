@@ -718,11 +718,23 @@
 }
 
 .Main_Layout_Container {
-  position: relativee;
+  position: relative;
   min-height: 100vh;
   background-color: black;
   width: 100%;
 }
+
+.menubutton_span{
+  position: absolute;
+  top: 0.7%;
+  right: 4%;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius:50%;
+  padding: 10px;
+}
+
 body::-webkit-scrollbar{
   display: none;
 }
@@ -865,6 +877,33 @@ body::-webkit-scrollbar{
   color: #dc5f00;
   font-size: 30px;
   margin-left: 0px;
+}
+
+
+/* --------------------------------------------------------------------------- */
+
+.Menu_container{
+  background-color: red;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.Menu_container_closebtn{
+  position: absolute;
+  right: 3%;
+  top:5%;
+  font-size: 42px;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
 /* ---------------------------------------------------------------- */
