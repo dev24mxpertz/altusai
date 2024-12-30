@@ -73,6 +73,9 @@ const AboutLayout = () => {
         transform: "translate(-50%, -50%)",
         ease: "power2.out",
         duration: 1,
+        onComplete: () => {
+          gsap.set(".Loading_overlaydiv", { opacity: "0", display: "none" });
+        },
       });
     console.log("-------CloseMenuWindowAnimation playing ");
     CloseMenuWindowAnimation.play();

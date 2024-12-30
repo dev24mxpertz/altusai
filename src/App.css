@@ -1057,9 +1057,9 @@ body::-webkit-scrollbar {
     margin: 20px 0px;
   }
 
-  .HerosectionFourth_contentcont_box_h3{
+  .HerosectionFourth_contentcont_box_h3 {
     font-size: 16px;
-  } 
+  }
   /* ------------------------------------------------------------------------------------------- HerosectionFifth_maincont  */
 
   .HerosectionFifth_maincont {
@@ -1090,7 +1090,7 @@ body::-webkit-scrollbar {
   .HerosectionFifth_contentcont_box_button {
     font-size: 20px;
     line-height: initial;
-    width:75%;
+    width: 75%;
   }
 
   /* ----------------------------------------------------------------------------------------------- Herosectionsixth_maincont */
@@ -1168,9 +1168,9 @@ body::-webkit-scrollbar {
   .Herosectionseventh_maincont_content_cont_left_h2 {
     font-size: 20px;
   }
-  .Herosectionseventh_maincont_content_cont_left_h3{
+  .Herosectionseventh_maincont_content_cont_left_h3 {
     font-size: 16px;
-  } 
+  }
 
   /* -------------------------------------------------------------------------------Foooter appp */
 
@@ -1200,16 +1200,16 @@ body::-webkit-scrollbar {
   .FooterSub_container_right_link {
     margin: 5px 0px;
   }
-  .Footer_content_container2_link{
+  .Footer_content_container2_link {
     font-size: 16px;
   }
-  .Footer_content_container2_emaildiv_p{
+  .Footer_content_container2_emaildiv_p {
     font-size: 18px;
   }
-  .Footer_content_container2_emaildiv_span{
+  .Footer_content_container2_emaildiv_span {
     font-size: 16px;
   }
-  .FooterSub_container_p{
+  .FooterSub_container_p {
     text-align: center;
   }
 
@@ -1232,5 +1232,142 @@ body::-webkit-scrollbar {
   }
   .Menu_container_contentbox_left_link {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 950px) {
+  .Footer_maincontainer {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .Footer_content_container1 {
+    width: 100%;
+  }
+  .Footer_content_container2 {
+    width: 100%;
+  }
+  .Footer_content_container3 {
+    width: 100%;
+  }
+
+  .FooterSub_container {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .FooterSub_container_right {
+    flex-direction: column;
+    margin: 10px 0px;
+  }
+  .FooterSub_container_right_link {
+    margin: 5px 0px;
+  }
+  .Footer_content_container2_link {
+    font-size: 16px;
+  }
+  .Footer_content_container2_emaildiv_p {
+    font-size: 18px;
+  }
+  .Footer_content_container2_emaildiv_span {
+    font-size: 16px;
+  }
+  .FooterSub_container_p {
+    text-align: center;
+  }
+
+  /* ------------------------------------------------------------------------- */
+
+  .HerosectionFirst_contentcont {
+    width: 100%;
+  }
+  .HerosectionFirst_contentcont_h1 {
+    font-size: 56px;
+  }
+  .HerosectionFirst_contentcont_h2 {
+    font-size: 33px;
+    line-height: 35px;
+    word-spacing: 0px;
+  }
+
+  .HerosectionSecond_contentcont_h1 {
+    font-size: 56px;
+  }
+
+  .HerosectionSecond_contentcont_h2 {
+    font-size: 33px;
+    line-height: 35px;
+    word-spacing: 0px;
+  }
+
+  .HerosectionThird_maincont_h1 {
+    font-size: 33px;
+    line-height: 35px;
+    word-spacing: 0px;
+  }
+
+  .HerosectionThird_contentcont {
+    width: 100%;
+  }
+  .HerosectionFourth_contentcont {
+    gap: 5px;
+  }
+  .HerosectionFifth_contentcont_box_button {
+    width: 90%;
+  }
+
+  /* ----------------------------------- */
+
+  .Herosectionsixth_maincontent_cont_h2 {
+    font-size: 24px;
+  }
+  .Herosectionseventh_maincont_content_cont_left_h2 {
+    font-size: 20px;
+  }
+  .HerosectionFifth_contentcont_box_h3 {
+    width: 92%;
+    font-size: 24px;
+  }
+  .Herosectionseventh_maincont_content_cont {
+    flex-direction: column;
+  }
+
+  .Herosectionseventh_maincont_content_cont_left,
+  .Herosectionseventh_maincont_content_cont_middle,
+  .Herosectionseventh_maincont_content_cont_right {
+    width: 100%;
+  }
+  .HerosectionFifth_contentcont {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 1260px) {
+  .Herosectionseventh_maincont_content_cont_left_h2 {
+    font-size: 22px;
+  }
+  .Footer_maincontainer {
+    padding: 80px 40px;
+  }
+  .HerosectionThird_contentcont {
+    width: 70%;
+  }
+}
+
+@media (max-width: 690px) {
+  .HerosectionThird_contentcont {
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 100%;
+  }
+  .HerosectionThird_contentcont_box {
+    margin: 10px;
+    padding: 10px;
+    max-width: 100%;
+  }
+  .HerosectionThird_contentcont_box_imagecont {
+    height: 10vh;
+  }
+  .HerosectionFourth_contentcont{
+    flex-direction: column;
   }
 }

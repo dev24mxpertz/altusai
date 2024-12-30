@@ -213,7 +213,7 @@
 
 
 
-@media (min-width: 0px) and (max-width: 450px) {
+@media (min-width: 0px) and (max-width: 950px) {
     .main_Contactus_container{
         height: initial;
         padding: 10px;
@@ -235,9 +235,16 @@
     .Left_Contactus_container_h2 {
         font-size: 30px;
         line-height: 32px;
+        word-spacing: -4px;
     }
     .Left_Contactus_container_p{
         width: 100%;
         margin: 15px 0px;
     } 
+    .Left_main_flexcontainer_right > p{
+      font-size: 10px;
+    }
+    .Left_main_flexcontainer_right > span{
+      font-size: 8px;
+    }
 }

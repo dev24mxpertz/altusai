@@ -17,71 +17,72 @@ const FrontEndPageLayout = () => {
     gsap.set(".Layout_section", { opacity: "1", height: "auto" });
   }, []);
 
-
-    const handleopenmenu = () => {
-      const OpenMenuWindowAnimation = gsap.timeline({ paused: true });
-      OpenMenuWindowAnimation.to(".Loading_overlaydiv", {
-        width: "100%",
-        left: "50%",
-        display: "initial",
-        opacity: 1,
-        ease: "power2.in",
-        duration: 1,
+  const handleopenmenu = () => {
+    const OpenMenuWindowAnimation = gsap.timeline({ paused: true });
+    OpenMenuWindowAnimation.to(".Loading_overlaydiv", {
+      width: "100%",
+      left: "50%",
+      display: "initial",
+      opacity: 1,
+      ease: "power2.in",
+      duration: 1,
+    })
+      .to(".Layout_section", {
+        opacity: 0,
+        height: "auto",
+        duration: 0.4,
+        ease: "power2.out",
       })
-        .to(".Layout_section", {
-          opacity: 0,
-          height: "auto",
-          duration: 0.4,
-          ease: "power2.out",
-        })
-        .to(".Menu_container", {
-          opacity: 1,
-          duration: 0.4,
-          display: "flex",
-          ease: "power2.out",
-        })
-        .to(".Loading_overlaydiv", {
-          left: "-150%",
-          transform: "translate(-50%, -50%)",
-          ease: "power2.out",
-          duration: 1,
-        });
-      console.log("-------playing open menu");
-      OpenMenuWindowAnimation.play();
-    };
-
-    const handleClosemenu = () => {
-      const CloseMenuWindowAnimation = gsap.timeline({ paused: true });
-      CloseMenuWindowAnimation.to(".Loading_overlaydiv", {
-        width: "100%",
-        left: "50%",
-        display: "initial",
+      .to(".Menu_container", {
         opacity: 1,
-        ease: "power2.in",
-        duration: 1,
+        duration: 0.4,
+        display: "flex",
+        ease: "power2.out",
       })
-        .to(".Layout_section", {
-          opacity: 1,
-          height: "auto",
-          duration: 0.4,
-          ease: "power2.out",
-        })
-        .to(".Menu_container", {
-          opacity: 0,
-          duration: 0.4,
-          display: "none",
-          ease: "power2.out",
-        })
-        .to(".Loading_overlaydiv", {
-          left: "150%",
-          transform: "translate(-50%, -50%)",
-          ease: "power2.out",
-          duration: 1,
-        });
-      console.log("-------CloseMenuWindowAnimation playing ");
-      CloseMenuWindowAnimation.play();
-    };
+      .to(".Loading_overlaydiv", {
+        left: "-150%",
+        transform: "translate(-50%, -50%)",
+        ease: "power2.out",
+        duration: 1,
+      });
+    console.log("-------playing open menu");
+    OpenMenuWindowAnimation.play();
+  };
 
+  const handleClosemenu = () => {
+    const CloseMenuWindowAnimation = gsap.timeline({ paused: true });
+    CloseMenuWindowAnimation.to(".Loading_overlaydiv", {
+      width: "100%",
+      left: "50%",
+      display: "initial",
+      opacity: 1,
+      ease: "power2.in",
+      duration: 1,
+    })
+      .to(".Layout_section", {
+        opacity: 1,
+        height: "auto",
+        duration: 0.4,
+        ease: "power2.out",
+      })
+      .to(".Menu_container", {
+        opacity: 0,
+        duration: 0.4,
+        display: "none",
+        ease: "power2.out",
+      })
+      .to(".Loading_overlaydiv", {
+        left: "150%",
+        transform: "translate(-50%, -50%)",
+        ease: "power2.out",
+        duration: 1,
+        onComplete: () => {
+          gsap.set(".Loading_overlaydiv", { opacity: "0", display: "none" });
+        },
+      });
+    console.log("-------CloseMenuWindowAnimation playing ");
+    CloseMenuWindowAnimation.play();
+  };
 
   return (
     <>

@@ -62,7 +62,6 @@ const Layout = () => {
     };
   }, []);
 
-
   const handleopenmenu = () => {
     const OpenMenuWindowAnimation = gsap.timeline({ paused: true });
     OpenMenuWindowAnimation.to(".Loading_overlaydiv", {

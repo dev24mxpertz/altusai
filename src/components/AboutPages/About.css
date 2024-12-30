@@ -237,7 +237,6 @@
 
 /* ---------------------------------------------------------------------------------------------    AboutFiFth --------  */
 
-
 .AboutFiFth_maincont {
   width: 100%;
   min-height: 100vh;
@@ -316,7 +315,7 @@
   text-transform: uppercase;
   text-align: center;
   margin: 20px 0px;
-    opacity: 0;
+  opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
@@ -342,7 +341,6 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-
 /* Reveal Text on Hover */
 .AboutFiFth_main_contentbox_left:hover .AboutFiFth_main_contentbox_body_p,
 .AboutFiFth_main_contentbox_middle_box:hover .AboutFiFth_main_contentbox_body_p,
@@ -350,7 +348,6 @@
   opacity: 1;
   transform: translateY(0);
 }
-
 
 @media (min-width: 0px) and (max-width: 450px) {
   .Aboutfirst_maincont {
@@ -427,5 +424,80 @@
   .AboutFiFth_main_contentbox_left,
   .AboutFiFth_main_contentbox_right {
     width: 100%;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 1050px) {
+  .AboutFiFth_main_contentbox {
+    flex-direction: column;
+  }
+  .AboutFiFth_main_contentbox_left,
+  .AboutFiFth_main_contentbox_right {
+    width: 100%;
+  }
+
+  .AboutFirst_contentcont_h1 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .AboutFirst_contentcont_h2 {
+    font-size: 26px;
+    word-spacing: 0px;
+    line-height: 35px;
+  }
+
+  .AboutSecond_contentcont_h1 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .AboutThird_contentcont_h1 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .AboutFourth_contentcont_h1 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .AboutFiFth_h1 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .AboutFiFth_main_contentbox_heading_p {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1050px) {
+  .AboutFiFth_main_contentbox {
+    flex-direction: column;
+  }
+  .AboutFiFth_main_contentbox_left,
+  .AboutFiFth_main_contentbox_right {
+    width: 100%;
+  }
+}
+
+
+@media (max-width:350px){
+  .AboutFirst_contentcont_h1{
+    font-size: 20px;
+  }
+  .AboutThird_contentcont_h1{
+        font-size: 20px;
+  }
+  .AboutFourth_contentcont_h1{
+     font-size: 20px;
+  }
+
+  .AboutFiFth_h1{
+     font-size: 20px;
+  }
+  .AboutFiFth_main_contentbox_heading_p{
+    font-size: 16px;
   }
 }
